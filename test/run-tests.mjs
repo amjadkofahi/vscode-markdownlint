@@ -10,4 +10,5 @@ try {
   await runTests({ extensionDevelopmentPath, extensionTestsPath });
 } catch (error) {
   console.error(`TEST FAILURE: ${error}`);
+  process.exit(1);
 }
